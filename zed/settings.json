@@ -1,0 +1,73 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "One Dark",
+  "base_keymap": "JetBrains",
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 13,
+  "autosave": "on_focus_change",
+  "code_actions_on_format": {
+    "source.fixAll": true,
+    "source.organizeImports.biome": true
+  },
+  "languages": {
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.removeUnusedImports": true,
+        "source.fixAll.eslint": true,
+        "source.addAllImpots": true
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.removeUnusedImports": true,
+        "source.addAllImpots": true,
+        "source.fixAll.eslint": true
+      }
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      },
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  },
+  "format_on_save": "on",
+  "terminal": {
+    "env": {
+      "EDITOR": "zed --wait"
+    }
+  },
+  "lsp": {
+    "vtsls": {
+      "initialization_options": {
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "relative"
+          }
+        }
+      }
+    }
+  },
+  "eslint": {
+    "settings": {
+      "codeActionOnSave": {
+        "rules": ["import/order"]
+      }
+    }
+  }
+}

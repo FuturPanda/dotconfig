@@ -1,0 +1,26 @@
+{
+  "my snippet": {
+    "prefix": "log",
+    "body": ["console.log(\"$1\")"],
+    "description": "Expand `log` to `console.log()`"
+  },
+  "Throw Exception": {
+    "prefix": "throw",
+    "body": ["throw new Error(\"$1\");", "$0"],
+    "description": "Throw Exception"
+  },
+  "React Arrow Component": {
+    "prefix": "rac",
+    "body": [
+      "const $TM_FILENAME_BASE = (props) => {",
+      " return (",
+      "  <>$1</>",
+      ");",
+      "};",
+      "",
+      "export default $TM_FILENAME_BASE;",
+      ""
+    ],
+    "description": "React Arrow Component"
+  }
+}

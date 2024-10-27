@@ -1,0 +1,13 @@
+[[conn]]
+type = "mysql"
+user = "root"
+host = "localhost"
+port = 3306
+password = "my-secret-pw"
+name = "mysql Foo DB"
+[[conn]]
+type = "sqlite"
+path = "/Users/user/Developer/Capsule/capsule/src/database/capsule.sqlite"
+[[conn]]
+type = "sqlite"
+path = "/Users/user/Documents/CapsuleMonoRepo/databases/var/root/root.capsule"
